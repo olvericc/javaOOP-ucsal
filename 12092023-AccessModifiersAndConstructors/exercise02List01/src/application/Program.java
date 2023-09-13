@@ -22,26 +22,38 @@ public class Program
         {
             option = Menu.showMenu(sc);
 
-            switch (option) {
-                case 1 -> {
+            switch (option)
+            {
+                case 1 ->
+                {
                     System.out.println("Type a value: ");
                     value = sc.nextDouble();
-                    if (acc1.deposit(value)) {
+
+                    if (acc1.deposit(value))
+                    {
                         System.out.println("Operation carried out successfully.");
-                    } else {
+                    }
+                    else
+                    {
                         System.out.println("The operation could not be performed, please try again.");
                     }
                 }
-                case 2 -> {
+                case 2 ->
+                {
                     System.out.println("Type a value: ");
                     value = sc.nextDouble();
-                    if (acc1.withdraw(value)) {
+
+                    if (acc1.withdraw(value))
+                    {
                         System.out.println("Operation carried out successfully.");
-                    } else {
+                    }
+                    else
+                    {
                         System.out.println("The operation could not be performed, please try again.");
                     }
                 }
-                case 3 -> {
+                case 3 ->
+                {
                     System.out.println();
                     System.out.println(acc1);
                     System.out.println();
