@@ -8,6 +8,7 @@ public class Fibonacci {
 	
 	public int nextTerm()
 	{
+	
 		int atual = this.a;
 		this.a = this.b;
 		this.b = this.c;
